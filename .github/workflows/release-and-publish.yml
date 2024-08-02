@@ -37,7 +37,7 @@ jobs:
       - name: Clone repository
         run: git clone https://$GITHUB_TOKEN@github.com/rrrrrrrrrrrocky/library-js.git --depth=25 --single-branch --branch main .
         env:
-          GITHUB_TOKEN: ${{ secrets.RRRRRRRRRRROCKY_GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.RRRRRRRRRRROCKY_ALL_ACCESS_GITHUB_TOKEN }}
 
       - name: Get commit of the latest tag
         run: echo "LATEST_TAG_COMMIT=$(git rev-list -n 1 $(git describe --tags --abbrev=0))" >> $GITHUB_ENV
@@ -76,7 +76,7 @@ jobs:
       - run: node ./scripts/start-release.js --release-type ${{ github.event.inputs.releaseType || 'canary' }} --semver-type ${{ github.event.inputs.semverType }}
         env:
           NPM_TOKEN: ${{ secrets.RRRRRRRRRRROCKY_NPM_TOKEN }}
-          GITHUB_TOKEN: ${{ secrets.RRRRRRRRRRROCKY_GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.RRRRRRRRRRROCKY_ALL_ACCESS_GITHUB_TOKEN }}
 
   publish:
     runs-on: ubuntu-latest
