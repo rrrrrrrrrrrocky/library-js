@@ -1,0 +1,29 @@
+{
+  "name": "@rrrrrrrrrrr/prettier-config",
+  "version": "1.1.5-canary.26",
+  "description": "rrrrrrrrrrr common prettier package",
+  "keywords": [
+    "prettier"
+  ],
+  "author": "rocky <rrrrrrrrrrrocky@gmail.com>",
+  "homepage": "https://github.com/rrrrrrrrrrrocky/library-js#readme",
+  "license": "MIT",
+  "main": "index.js",
+  "files": [
+    "index.js"
+  ],
+  "peerDependencies": {
+    "prettier": ">= 3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rrrrrrrrrrrocky/library-jsn.git",
+    "directory": "packages/prettier-config"
+  },
+  "bugs": {
+    "url": "https://github.com/rrrrrrrrrrrocky/library-js/issues"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
+  }
+}
