@@ -1,6 +1,6 @@
 {
   "name": "@rrrrrrrrrrr/prettier-config",
-  "version": "1.1.5-canary.26",
+  "version": "1.1.5",
   "description": "rrrrrrrrrrr common prettier package",
   "keywords": [
     "prettier"
