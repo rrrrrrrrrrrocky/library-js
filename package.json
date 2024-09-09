@@ -10,6 +10,7 @@
   "scripts": {
     "lerna": "lerna",
     "publish:lerna": "npm config set access public && lerna publish",
+    "md-editor": "pnpm --filter @rrrrrrrrrrr/md-editor",
     "react": "pnpm --filter react",
     "js": "pnpm --filter vanilla-js",
     "ts": "pnpm --filter vanilla-ts"

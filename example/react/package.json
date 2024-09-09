@@ -20,6 +20,7 @@
     "vite": "^5.2.13",
     "@rrrrrrrrrrr/eslint-config": "workspace:*",
     "@rrrrrrrrrrr/prettier-config": "workspace:*",
+    "@rrrrrrrrrrr/md-editor": "workspace:*",
     "prettier": "3.3.2"
   }
 }
