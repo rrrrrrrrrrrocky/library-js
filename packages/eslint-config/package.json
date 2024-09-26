@@ -13,7 +13,7 @@
   "homepage": "https://github.com/rrrrrrrrrrr/library-js#readme",
   "license": "MIT",
   "main": "index.js",
-  "devDependencies": {
+  "dependencies": {
     "@eslint/compat": "^1.1.1",
     "@eslint/eslintrc": "^3.1.0",
     "@typescript-eslint/parser": "8.7.0",
