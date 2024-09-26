@@ -6,27 +6,29 @@
     "eslint",
     "eslint-config",
     "eslint-config-custom",
-    "locked-dobby"
+    "rrrrrrrrrrr",
+    "rrrrrrrrrrrocky"
   ],
-  "author": "rocky <rrrrrrrrrrrocky@gmail.com>",
+  "author": "rrrrrrrrrrrocky <rrrrrrrrrrrocky@gmail.com>",
   "homepage": "https://github.com/rrrrrrrrrrr/library-js#readme",
   "license": "MIT",
-  "main": "base.js",
-  "dependencies": {
-    "@typescript-eslint/eslint-plugin": "7.13.0",
-    "@typescript-eslint/parser": "7.13.0",
-    "eslint": "8.57.0",
-    "eslint-config-next": "14.2.4",
+  "main": "index.js",
+  "devDependencies": {
+    "@eslint/compat": "^1.1.1",
+    "@eslint/eslintrc": "^3.1.0",
+    "@typescript-eslint/parser": "8.7.0",
+    "eslint": "9.11.1",
+    "eslint-config-next": "14.2.13",
     "eslint-config-prettier": "9.1.0",
-    "eslint-plugin-import": "2.29.1",
-    "eslint-plugin-simple-import-sort": "12.1.0"
+    "eslint-plugin-import": "2.30.0",
+    "eslint-plugin-react": "^7.36.1",
+    "eslint-plugin-react-hooks": "^4.6.2",
+    "eslint-plugin-simple-import-sort": "12.1.1",
+    "typescript-eslint": "^8.7.0"
   },
-  "files": [
-    "base.js",
-    "react.js",
-    "next.js",
-    "typescript.js"
-  ],
+  "peerDependencies": {
+    "eslint": ">=9.0.0"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/rrrrrrrrrrrocky/library-js.git",
