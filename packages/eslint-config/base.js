@@ -20,7 +20,7 @@ module.exports = [
         },
       ],
       //코드에서 console.log와 같은 console 사용을 금지하며, 경고나 에러를 발생시킴
-      "no-console": "warn",
+      "no-console": ["warn", { allow: ["warn", "error"] }],
       // 함수 내에서 함수 파라미터의 값을 변경하는 것을 금지
       "no-param-reassign": "off",
       // dot 표기법 사용을 권장하지만, dot 표기법이 어울리지 않을 때에만 경고를 발생시킵니다.

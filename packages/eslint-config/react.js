@@ -8,9 +8,9 @@ module.exports = [
   ...base,
   {
     ignores: ["node_modules/**"],
+    files: ["*.js?(x)", "*.ts?(x)"],
   },
   {
-    files: ["*.js?(x)", "*.ts?(x)"],
     plugins: {
       react,
       "react-hooks": fixupPluginRules(reactHooks),
@@ -30,7 +30,6 @@ module.exports = [
       },
     },
     rules: Object.freeze({
-      ...reactHooks.configs.recommended.rules,
       // React 설정
       "react-hooks/exhaustive-deps": "warn",
       "react-hooks/rules-of-hooks": "error",
