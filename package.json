@@ -14,7 +14,8 @@
     "js": "pnpm --filter vanilla-js",
     "ts": "pnpm --filter vanilla-ts",
     "next": "pnpm --filter next",
-    "vite": "pnpm --filter vite-react"
+    "vite": "pnpm --filter vite-react",
+    "slate-editor": "pnpm --filter slate-editor"
   },
   "dependencies": {},
   "devDependencies": {
