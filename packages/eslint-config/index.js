@@ -4,5 +4,6 @@ module.exports = {
     react: require("./react.js"),
     next: require("./next.js"),
     typescript: require("./typescript.js"),
+    vite: require("./vite.js"),
   },
 };

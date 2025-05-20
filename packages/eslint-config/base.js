@@ -1,5 +1,9 @@
 module.exports = [
   {
+    languageOptions: {
+      ecmaVersion: "latest",
+      sourceType: "module",
+    },
     plugins: {
       import: require("eslint-plugin-import"),
       "simple-import-sort": require("eslint-plugin-simple-import-sort"),
@@ -19,8 +23,21 @@ module.exports = [
           maxEOF: 0, // 파일 끝 부분에 빈 줄 허용하지 않음
         },
       ],
-      //코드에서 console.log와 같은 console 사용을 금지하며, 경고나 에러를 발생시킴
-      "no-console": ["warn", { allow: ["warn", "error"] }],
+      // console.log는 에러로 처리, 다른 console.*은 허용
+      "no-console": [
+        "error",
+        {
+          allow: [
+            "warn",
+            "error",
+            "info",
+            "debug",
+            "trace",
+            "group",
+            "groupEnd",
+          ],
+        },
+      ],
       // 함수 내에서 함수 파라미터의 값을 변경하는 것을 금지
       "no-param-reassign": "off",
       // dot 표기법 사용을 권장하지만, dot 표기법이 어울리지 않을 때에만 경고를 발생시킵니다.

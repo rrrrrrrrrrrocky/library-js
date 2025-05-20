@@ -11,7 +11,7 @@ module.exports = [
   ...base,
   {
     ignores: ["dist/**", "node_modules/**"],
-    files: ["*.js?(x)", "*.ts?(x)"],
+    files: ["**/*.js?(x)", "**/*.ts?(x)"],
     languageOptions: {
       ecmaVersion: "latest",
       parser: tsParser,
@@ -30,7 +30,15 @@ module.exports = [
     },
     rules: Object.freeze({
       "no-unused-vars": "off",
-      "@typescript-eslint/no-unused-vars": "warn",
+      "@typescript-eslint/no-unused-vars": [
+        "warn",
+        {
+          argsIgnorePattern: "^_",
+          varsIgnorePattern: "^_",
+          caughtErrorsIgnorePattern: "^_",
+          // ignoreRestSiblings: true, // 구조 분해 할당 시 나머지 연산자 사용을 허용하여 경고 무시
+        },
+      ],
       "@typescript-eslint/interface-name-prefix": "off",
       "@typescript-eslint/explicit-function-return-type": "off",
       "@typescript-eslint/explicit-module-boundary-types": "off",
@@ -42,5 +50,13 @@ module.exports = [
       "@typescript-eslint/no-non-null-assertion": "off",
       "@typescript-eslint/no-explicit-any": "warn",
     }),
+  },
+  {
+    // .d.ts 파일에 대한 unused 변수 규칙 비활성화
+    files: ["**/*.d.ts"],
+    rules: {
+      "@typescript-eslint/no-unused-vars": "off",
+      "no-unused-vars": "off",
+    },
   },
 ];
